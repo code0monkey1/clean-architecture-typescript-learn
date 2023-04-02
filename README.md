@@ -44,6 +44,8 @@ In code , it means we create an interface that specifies the function that is su
 
 In the case of a charging port , it's function is to charge a device.
 
+---
+
 ```typescript
 
 //Port 
