@@ -26,9 +26,11 @@ etc ...
 
 ---
 
-## Ports /  Adapters / Plugs
+## Ports /  Adapters / Devices
 
-### Ports
+---
+
+### 1 . Ports
 
 <img src='./pictures/port.jpeg' width="300" height="300"/>
 
@@ -38,7 +40,7 @@ In code , it means we create an interface that
 
 ---
 
-### Adapters
+### 2 . Adapters
 
 <img src='./pictures/laptopAdapter.jpg' width="300" height="300"/>
 
@@ -48,7 +50,7 @@ _Adapters are the structures that allow the plugs to access and interact with th
 
 ---
 
-### Devices
+### 3 . Devices
 
 <img src='./pictures/macbookDevice.webp' width="300" height="300"/>
 
@@ -62,3 +64,7 @@ that plugs into the adapter in order to communicate with the port_
 ### The Whole Setup in Action
 
 <img src='./pictures/macbookCharging.jpg' width="300" height="300"/>
+
+---
+
+<img src='./pictures/phoneCharging.jpg' width="300" height="300"/>
