@@ -60,7 +60,7 @@ interface ChargeDevice{
 
 <img src='./pictures/phoneAdapter.jpeg' width="300" height="300"/>
 
-_Adapters are the structures that allow the plugs to access and interact with the ports_
+_Adapters concrete implemantations that are specific to the device being used, that connect to the port to carry on the task on the particular device it's catering to_
 
 ---
 
