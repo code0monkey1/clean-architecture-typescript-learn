@@ -19,3 +19,5 @@ If everything goes well in the architectural process , we end up with software l
 etc ...
 
 **i.e : We could swap out any of the concrete implementations, `the Data Base` , for example at any time , and substitute it with another implementation  ( eg Switching MongoDb with MySql ) , and there would be no change in implementation required to any of the lower layers of our application**
+
+> What's more , every layer of our architecture can be tested independently. Thereby aiding a quick `TDD process`
