@@ -50,3 +50,9 @@ _Adapters are the structures that allow the plugs to access and interact with th
 
 _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port_
+
+---
+
+### The Whole Setup in Action
+
+<img src='./pictures/setup.webp' width="200" height="200"/>
