@@ -33,6 +33,7 @@ const user:UserData = {
   name:"Chiranjeev"
 }
 
+// ChargeApplianceUseCase
 class GreetUserUseCase {
      
   constructor(private readonly greetUser:IGreetUser) {}
