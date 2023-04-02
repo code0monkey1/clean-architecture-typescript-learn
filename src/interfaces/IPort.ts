@@ -15,10 +15,15 @@
 class MacBookAdapter implements Port{
 
   charge(device: IDevice): void {
-    
+      
       console.log("💻 💻 💻 💻 💻 💻")
       console.log("Charging : ",device.name," of pin type : ",device.pinType)
       console.log("🍎 🍎 🍎 🍏 🍏 🍏")
+
+     
+      for(let i =0;i<=100;i+=10){
+        
+      }
   }
   
 }
