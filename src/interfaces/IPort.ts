@@ -44,7 +44,12 @@ class ChargeDeviceUseCase {
      
   constructor(private readonly adapter : ChargeDevice) {}
 
-
+   execute( device : IDevice){
+     this.adapter.charge(device);
+   }
 
 }
+
+
+
 
