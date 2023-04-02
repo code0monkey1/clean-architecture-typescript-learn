@@ -60,10 +60,11 @@ interface ChargeDevice{
 
 <img src='./pictures/phoneAdapter.jpeg' width="300" height="300"/>
 
-_Adapters concrete implemantations that are specific to the device being used, that connect to the port to carry on the task on the particular device it's catering to_
+_Adapters are concrete implemantations , that are specific to the device being used. They connect to the port to carry on the task on the particular device it's catering to_
 
 ```typescript
 //MacBook Adapter
+
 class MacBookCharger implements ChargeDevice{
 
   charge(device: TDevice ): void {
