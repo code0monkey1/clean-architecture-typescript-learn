@@ -173,3 +173,10 @@ const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
 ChargeMacBook.execute(MacBook)
 
 ```
+
+## The Dependency Rule
+
+> Nothing in the inner circle can know about
+> the outer circle
+
+It is imperative that we ensure that nothing
