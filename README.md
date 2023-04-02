@@ -62,6 +62,34 @@ interface ChargeDevice{
 
 _Adapters concrete implemantations that are specific to the device being used, that connect to the port to carry on the task on the particular device it's catering to_
 
+```typescript
+//MacBook Adapter
+class MacBookCharger implements ChargeDevice{
+
+  charge(device: TDevice ): void {
+
+      console.log("💻 💻 💻 💻 💻 💻")
+      console.log("Charging : ",device.name," of pin type : ",device.pinType)
+      console.log("🍎 🍎 🍎 🍏 🍏 🍏")
+
+      for(let i =0;i<=100;i+=10)
+         console.log(`Current Charge : ${i} %`)
+
+  }
+  
+}
+//Phone Adapter
+class PhoneCharger implements ChargeDevice{
+
+  charge(device: TDevice): void {
+      console.log("📱 📱 📱  📱 📱 📱")
+      console.log(`Charging : ${device.name}, \n of pin type : ${device.pinType}`)
+      console.log("🤖 🤖 🤖 🤖 🤖 🤖 ")
+  }
+
+}
+```
+
 ---
 
 ### 3 . Devices
