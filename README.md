@@ -179,4 +179,4 @@ ChargeMacBook.execute(MacBook)
 > Nothing in the inner circle can know about
 > the outer circle
 
-It is imperative that we ensure that nothing
+It is imperative that we ensure that none of the structures in the inner layers can know about any of the outer layers, but the outer layers `can and should` know about the inner layers .
