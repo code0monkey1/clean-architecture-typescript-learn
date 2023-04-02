@@ -23,3 +23,9 @@ etc ...
 > What's more , every layer of our architecture can be tested independently.
 >
 > Thereby aiding a quick `TDD Process`
+
+---
+
+## Ports and Adapters
+
+Ports are the interfaces
