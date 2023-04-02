@@ -36,7 +36,21 @@ etc ...
 
 _Ports are the interfaces to which adapters can connect to_
 
-In code , it means we create an interface that
+In code , it means we create an interface that specifies the function that is supposed to be performed
+
+In the case of a charging port , it's function is to charge a device.
+
+```typescript
+
+//Port 
+
+interface ChargeDevice{
+     
+     charge(device:TDevice):void;
+     
+}
+
+```
 
 ---
 
