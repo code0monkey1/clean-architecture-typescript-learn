@@ -2,6 +2,8 @@
 
 ![Clean Architecture](./pictures/CleanArchitecture.jpg)
 
+[Clean Architecture Blog Post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html "Read About the Clean Architecture in detail, in the blog by Uncle Bob")
+
 ## Motivation to use `Clean Architecture`
 
 **As software complexity grows , so does the overhead of one changing any of the fundamental parts in the given software .**
