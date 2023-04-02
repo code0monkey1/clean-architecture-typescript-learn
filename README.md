@@ -8,7 +8,7 @@
 
 > One change can cause a ripple effect throughout the whole software system , leading to many changes , hence potentially many bugs , during refactoring
 
-_A great way to manage complexity is to arrange the code in layers of abstraction ,
+_A great way to manage complexity is to arrange the code into layers of abstraction ,
 with the lower layers not knowing about the concrete implementation of the upper layers
 , and them communicating with the upper layers only through adapters ( abstract interfaces )._
 
