@@ -32,7 +32,7 @@ etc ...
 
 ![Port](pictures/port.jpeg)
 
-_Ports are the interfaces that allow the communication between different layers_
+_Ports are the interfaces to which adapters can connect to_
 
 ---
 
