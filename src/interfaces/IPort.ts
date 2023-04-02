@@ -12,7 +12,7 @@ interface ChargeDevice{
    
 }
 //Adapter
-class MacBookAdapter implements ChargeDevice{
+class MacBookCharger implements ChargeDevice{
 
   charge(device: IDevice ): void {
       
@@ -29,7 +29,7 @@ class MacBookAdapter implements ChargeDevice{
   
 }
 //Adapter
-class PhoneAdapter implements ChargeDevice{
+class PhoneCharger implements ChargeDevice{
 
   charge(device: IDevice): void {
      console.log("📱 📱 📱  📱 📱 📱")
@@ -42,9 +42,7 @@ class PhoneAdapter implements ChargeDevice{
 // Charging a Device
 class ChargeDeviceUseCase {
      
-  constructor(adapter: ChargeDevice) {
-
-  }
+  constructor(private readonly adapter : ChargeDevice) {}
 
 
 
