@@ -3,18 +3,21 @@ type UserData={
   email:string,
   dateOfBirth:Date
 }
-
-const exportPackage=(name:string) =>{
-    
-    const printName=()=>{
-       console.log(name);
-    }
-   
-}
-class ExportUserUseCase{
+class GreetUserUseCase{
    
   execute(user:UserData):void{
       
-
+    console.log(user.name)
   }
 }
+
+const user:UserData = {
+  dateOfBirth:new Date('01/02/1985'),
+  email:"vonnaden@gmail.com",
+  name:"Chiranjeev"
+}
+
+
+const Greeting = new GreetUserUseCase()
+
+Greeting.execute(user)
