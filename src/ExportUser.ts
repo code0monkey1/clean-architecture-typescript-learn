@@ -42,10 +42,10 @@ const user:UserData = {
 // ChargeApplianceUseCase
 class GreetUserUseCase {
      
-  constructor(private readonly greetUser:IGreetUser) {}
+  constructor(private readonly userGreetService: IGreetUser) {} // type of greeting
 
   execute(userData:UserData){
-    this.greetUser.greet(userData)
+    this.userGreetService.greet(userData) // user data
   }
 
 }
