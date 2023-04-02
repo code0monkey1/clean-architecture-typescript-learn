@@ -10,7 +10,7 @@
 
 _A great way to manage complexity is to arrange the code into layers of abstraction ,
 with the lower layers not knowing about the concrete implementation of the upper layers
-, and them communicating with the upper layers only through adapters ( abstract interfaces )._
+, and them communicating with each other only through adapters ( abstract interfaces )._
 
-**This way , one can easily implement changes to any of the layers any time , and
-there would be no need to to change anything in the underlying layer , as the shape of the adapters ( abstract interfaces ) would never be changed , but only the concrete implementation in the specific layer would be changed.**
+**This way , one can easily make  changes to any of the layers any time , and
+there would the need of multilayer changes , as the shape of the adapters ( abstract interfaces ) would never be changed , and only the concrete implementation in a specific layer would be modified.**
