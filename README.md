@@ -114,7 +114,7 @@ that plugs into the adapter in order to communicate with the port_
 In Typescript Code , this is how we'd
 go about defining the Device Type 
 
-//Device
+//Device ( Entity )
 
  type TDevice={
 
