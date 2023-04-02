@@ -125,3 +125,46 @@ go about defining the Device Type
 ---
 
 <img src='./pictures/phoneCharging.jpg' width="300" height="300"/>
+
+```typescript
+
+// Charging a Device
+
+class ChargeDeviceUseCase {
+     
+  constructor(private readonly adapter : ChargeDevice) {}
+
+   execute( device : TDevice){
+     this.adapter.charge(device);
+   }
+
+}
+
+const pixelPhone:TDevice={
+  name:"Google Pixel",
+  pinType:"3 pin"
+}
+
+const MacBook:TDevice={
+  name:"MacBook Pro",
+  pinType:"2 pin"
+}
+
+const NewPhoneCharge = new PhoneCharger()
+
+const NewMacBookCharge = new MacBookCharger()
+
+
+const ChargePhone =  new ChargeDeviceUseCase(NewPhoneCharge)
+
+ChargePhone.execute(pixelPhone)
+
+
+const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
+
+ChargeMacBook.execute(MacBook)
+
+
+
+
+```
