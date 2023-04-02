@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/code0monkey1/clean-architecture-typescript-learn/issues"
   },
-  "homepage": "https://github.com/code0monkey1/clean-architecture-typescript-learn#readme"
+  "homepage": "https://github.com/code0monkey1/clean-architecture-typescript-learn#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3"
+  }
 }
