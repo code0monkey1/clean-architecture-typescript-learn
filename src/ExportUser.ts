@@ -4,25 +4,25 @@ type UserData={
   dateOfBirth:Date
 }
 
-interface GreetUserOnEntry{
-    
+interface IGreetUser{
      greet(user:UserData):void;
 }
 
+class GreetUserOnEntryWithFlowers implements IGreetUser{
 
-class GreetUserOnEntryWithFlowers implements GreetUserOnEntry{
-  
   greet(user: UserData): void {
-    throw new Error("Method not implemented.");
+    console.log("💐🌸🌺🌷💐🌸🌺🌷 ")
+    console.log(user.name)
+    console.log("💐🌸🌺🌷💐🌸🌺🌷 ")
   }
 
 }
 
-class GreetUserUseCase{
-   
-  execute(user:UserData):void{
-      
+class GreetUserOnEntryWithKnives implements IGreetUser{
+  greet(user: UserData): void {
+    throw new Error("Method not implemented.");
   }
+  
 }
 
 const user:UserData = {
@@ -31,7 +31,18 @@ const user:UserData = {
   name:"Chiranjeev"
 }
 
+class GreetUserUseCase {
+     
+  constructor(private readonly greetUser:IGreetUser) {}
 
-const Greeting = new GreetUserUseCase()
+  execute(userData:UserData){
+    this.greetUser.greet(userData)
+  }
 
-Greeting.execute(user)
+}
+
+const greetWithFlowers = new GreetUserOnEntryWithFlowers()
+
+const GreetUser = new GreetUserUseCase(greetWithFlowers)
+
+GreetUser.execute(user)
