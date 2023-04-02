@@ -33,8 +33,8 @@ class MacBookCharger implements ChargeDevice{
 class PhoneCharger implements ChargeDevice{
 
   charge(device: TDevice): void {
-     console.log("📱 📱 📱  📱 📱 📱")
-      console.log("Charging : ",device.name," of pin type : ",device.pinType)
+      console.log("📱 📱 📱  📱 📱 📱")
+      console.log("Charging : ",device.name," \n of pin type : ",device.pinType)
       console.log("🤖 🤖 🤖 🤖 🤖 🤖 ")
   }
 
