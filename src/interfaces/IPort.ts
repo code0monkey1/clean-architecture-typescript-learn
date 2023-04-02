@@ -1,13 +1,29 @@
-
-export interface  IAppliance{
+ interface  IDevice{
 
   name: string,
   pinType:"2 pin"|"3 pin"
 
 }
 
-export default interface Port{
+ interface Port{
      
-     providePower( appliance : IAppliance)
+     charge(device:IDevice):void;
    
 }
+
+
+class MacBookAdapter implements Port{
+
+  charge(device: IDevice): void {
+    throw new Error("Method not implemented.");
+  }
+  
+}
+
+
+
+class ChargeDeviceUseCase {
+     
+
+}
+
