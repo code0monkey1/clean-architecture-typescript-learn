@@ -28,6 +28,8 @@ etc ...
 
 ## Ports /  Adapters / Devices
 
+>_A practical and useful implementation of the dependency inversion principle_
+
 ---
 
 ### 1 . Ports
