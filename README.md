@@ -50,6 +50,8 @@ In the case of a charging port , it's function is to charge a device.
 
 interface ChargeDevice{
      
+//behavior
+
      charge(device:TDevice):void;
      
 }
