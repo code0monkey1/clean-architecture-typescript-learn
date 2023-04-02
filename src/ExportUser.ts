@@ -3,11 +3,25 @@ type UserData={
   email:string,
   dateOfBirth:Date
 }
+
+interface GreetUserOnEntry{
+    
+     greet(user:UserData):void;
+}
+
+
+class GreetUserOnEntryWithFlowers implements GreetUserOnEntry{
+  
+  greet(user: UserData): void {
+    throw new Error("Method not implemented.");
+  }
+
+}
+
 class GreetUserUseCase{
    
   execute(user:UserData):void{
       
-    console.log(user.name)
   }
 }
 
