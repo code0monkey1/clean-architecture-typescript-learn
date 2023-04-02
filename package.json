@@ -2,8 +2,11 @@
   "name": "clean-architecture-typescript-learn",
   "version": "1.0.0",
   "description": "![Clean Architecture](./pictures/CleanArchitecture.jpg)",
-  "main": "index.js",
+  "main": "dist/main/server.js",
   "scripts": {
+    "build":"tsc",
+    "build:watch": "tsc -w",
+    "start": "node dist/main/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
