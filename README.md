@@ -50,7 +50,9 @@ _Adapters are the structures that allow the plugs to access and interact with th
 
 ### Devices
 
-<img src='./pictures/plug.jpeg' width="300" height="300"/>
+<img src='./pictures/macbookDevice.webp' width="300" height="300"/>
+
+<img src='./pictures/pixelPhoneDevice.jpg' width="300" height="300"/>
 
 _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port_
