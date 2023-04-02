@@ -40,13 +40,15 @@ In code , it means we create an interface that
 
 ### Adapters
 
-<img src='./pictures/adapter.webp' width="300" height="300"/>
+<img src='./pictures/laptopAdapter.jpg' width="300" height="300"/>
+
+<img src='./pictures/phoneAdapter.jpeg' width="300" height="300"/>
 
 _Adapters are the structures that allow the plugs to access and interact with the ports_
 
 ---
 
-### Plugs
+### Devices
 
 <img src='./pictures/plug.jpeg' width="300" height="300"/>
 
