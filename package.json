@@ -1,0 +1,20 @@
+{
+  "name": "clean-architecture-typescript-learn",
+  "version": "1.0.0",
+  "description": "![Clean Architecture](./pictures/CleanArchitecture.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code0monkey1/clean-architecture-typescript-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code0monkey1/clean-architecture-typescript-learn/issues"
+  },
+  "homepage": "https://github.com/code0monkey1/clean-architecture-typescript-learn#readme"
+}
