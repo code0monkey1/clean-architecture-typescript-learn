@@ -2,11 +2,21 @@ var GreetUserOnEntryWithFlowers = /** @class */ (function () {
     function GreetUserOnEntryWithFlowers() {
     }
     GreetUserOnEntryWithFlowers.prototype.greet = function (user) {
-        console.log("💐🌸🌺🌷💐🌸🌺🌷 ");
+        console.log("🌸🌺🌷💐🌸🌺🌷 ");
         console.log(user.name);
         console.log("💐🌸🌺🌷💐🌸🌺🌷 ");
     };
     return GreetUserOnEntryWithFlowers;
+}());
+var GreetUserOnEntryWithKnives = /** @class */ (function () {
+    function GreetUserOnEntryWithKnives() {
+    }
+    GreetUserOnEntryWithKnives.prototype.greet = function (user) {
+        console.log("🔪🔪🔪🔪🔪");
+        console.log(user.name);
+        console.log("🗡️🗡️🗡️🗡️🗡️");
+    };
+    return GreetUserOnEntryWithKnives;
 }());
 var user = {
     dateOfBirth: new Date('01/02/1985'),
@@ -23,5 +33,6 @@ var GreetUserUseCase = /** @class */ (function () {
     return GreetUserUseCase;
 }());
 var greetWithFlowers = new GreetUserOnEntryWithFlowers();
-var GreetUser = new GreetUserUseCase(greetWithFlowers);
-GreetUser.execute(user);
+var greetWithKnives = new GreetUserOnEntryWithKnives();
+var PayingUser = new GreetUserUseCase(greetWithFlowers);
+var DefaultingUser = new GreetUserUseCase(greetWithKnives);

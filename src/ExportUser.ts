@@ -11,7 +11,7 @@ interface IGreetUser{
 class GreetUserOnEntryWithFlowers implements IGreetUser{
 
   greet(user: UserData): void {
-    console.log("💐🌸🌺🌷💐🌸🌺🌷 ")
+    console.log("🌸🌺🌷💐🌸🌺🌷 ")
     console.log(user.name)
     console.log("💐🌸🌺🌷💐🌸🌺🌷 ")
   }
@@ -20,7 +20,9 @@ class GreetUserOnEntryWithFlowers implements IGreetUser{
 
 class GreetUserOnEntryWithKnives implements IGreetUser{
   greet(user: UserData): void {
-    throw new Error("Method not implemented.");
+    console.log("🔪🔪🔪🔪🔪");
+    console.log(user.name)
+    console.log("🗡️🗡️🗡️🗡️🗡️")
   }
   
 }
@@ -43,6 +45,8 @@ class GreetUserUseCase {
 
 const greetWithFlowers = new GreetUserOnEntryWithFlowers()
 
-const GreetUser = new GreetUserUseCase(greetWithFlowers)
+const greetWithKnives = new GreetUserOnEntryWithKnives()  
 
-GreetUser.execute(user)
+const PayingUser = new GreetUserUseCase(greetWithFlowers)
+
+const DefaultingUser = new GreetUserUseCase(greetWithKnives)
