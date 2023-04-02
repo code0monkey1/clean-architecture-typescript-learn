@@ -40,7 +40,7 @@ _Ports are the interfaces to which adapters can connect to_
 
 <img src='./pictures/adapter.webp' width="200" height="200"/>
 
-_Adapters are the the classes , whose constructor has a way to plug the implementation ( whose type is the Port interface type)_
+_Adapters are the structures that allow the plugs to access and interact with the ports_
 
 ---
 
@@ -49,4 +49,4 @@ _Adapters are the the classes , whose constructor has a way to plug the implemen
 <img src='./pictures/plug.jpeg' width="200" height="200"/>
 
 _This is the concrete implementation
-that plugs into the adapter in order to communicate with the port._
+that plugs into the adapter in order to communicate with the port_
