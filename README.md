@@ -61,4 +61,4 @@ that plugs into the adapter in order to communicate with the port_
 
 ### The Whole Setup in Action
 
-<img src='./pictures/setup.jpg' width="300" height="300"/>
+<img src='./pictures/macbookCharging.jpg' width="300" height="300"/>
