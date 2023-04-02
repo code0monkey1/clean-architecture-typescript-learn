@@ -186,3 +186,5 @@ In other words , `Source code dependencies can only point inwards , and not outw
 i.e  It is ok for `UseCase` structures to know about `Entities` , but it's not ok the other way around .
 
 However , the communication between the different layers will always take place through interfaces , and never directly.
+
+This objective is easily achieved by applying the `Dependency Inversion Principle`
