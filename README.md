@@ -34,6 +34,8 @@ etc ...
 
 _Ports are the interfaces to which adapters can connect to_
 
+In code , it means we create an interface that
+
 ---
 
 ### Adapters
