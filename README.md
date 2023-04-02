@@ -26,8 +26,10 @@ etc ...
 
 ---
 
-## Ports and Adapters
+## Ports /  Adapters / Plugs
+
+### Ports
 
 Ports are the interfaces that allow the communication between different layers.
 
-Adapters are the
+Adapters are the the classes , whose constructor has a way to plug the implementation ( whose type is the Port interface type)
