@@ -30,7 +30,7 @@ etc ...
 
 ### Ports
 
-![Port](pictures/port.jpeg)
+<img src='./pictures/port.jpeg' width="100" height="100"/>
 
 _Ports are the interfaces to which adapters can connect to_
 
@@ -38,7 +38,7 @@ _Ports are the interfaces to which adapters can connect to_
 
 ### Adapters
 
-![Adapters](pictures/adapter.webp)
+<img src='./pictures/adapter.webp' width="100" height="100"/>
 
 _Adapters are the the classes , whose constructor has a way to plug the implementation ( whose type is the Port interface type)_
 
@@ -46,7 +46,7 @@ _Adapters are the the classes , whose constructor has a way to plug the implemen
 
 ### Plugs
 
-![Plugs](pictures/plug.jpeg)
+<img src='./pictures/plug.jpeg' width="100" height="100"/>
 
 _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port._
