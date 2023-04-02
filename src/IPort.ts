@@ -34,7 +34,7 @@ class PhoneCharger implements ChargeDevice{
 
   charge(device: TDevice): void {
       console.log("📱 📱 📱  📱 📱 📱")
-      console.log("Charging : ",device.name," \n of pin type : ",device.pinType)
+      console.log(`Charging : ${device.name}, \n of pin type : ${device.pinType}`)
       console.log("🤖 🤖 🤖 🤖 🤖 🤖 ")
   }
 
@@ -56,11 +56,25 @@ const pixelPhone:TDevice={
   pinType:"3 pin"
 }
 
-const ChargePhone = new PhoneCharger()
+const MacBook:TDevice={
+  name:"MacBook Pro",
+  pinType:"2 pin"
+}
 
-const ChargeNewDevice =  new ChargeDeviceUseCase(ChargePhone)
+const NewPhoneCharge = new PhoneCharger()
 
-ChargeNewDevice.execute(pixelPhone)
+const NewMacBookCharge = new MacBookCharger()
+
+
+const ChargePhone =  new ChargeDeviceUseCase(NewPhoneCharge)
+
+ChargePhone.execute(pixelPhone)
+
+
+const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
+
+ChargeMacBook.execute(MacBook)
+
 
 
 

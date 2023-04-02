@@ -9,7 +9,7 @@ var MacBookCharger = /** @class */ (function () {
         var _loop_1 = function (i) {
             setTimeout(function () {
                 console.log("Current Charge : ".concat(i, " %"));
-            }, 1000);
+            }, 5000);
         };
         for (var i = 0; i <= 100; i += 10) {
             _loop_1(i);
@@ -23,7 +23,7 @@ var PhoneCharger = /** @class */ (function () {
     }
     PhoneCharger.prototype.charge = function (device) {
         console.log("📱 📱 📱  📱 📱 📱");
-        console.log("Charging : ", device.name, " of pin type : ", device.pinType);
+        console.log("Charging : ".concat(device.name, ", \n of pin type : ").concat(device.pinType));
         console.log("🤖 🤖 🤖 🤖 🤖 🤖 ");
     };
     return PhoneCharger;
@@ -42,6 +42,13 @@ var pixelPhone = {
     name: "Google Pixel",
     pinType: "3 pin"
 };
-var ChargePhone = new PhoneCharger();
-var ChargeNewDevice = new ChargeDeviceUseCase(ChargePhone);
-ChargeNewDevice.execute(pixelPhone);
+var MacBook = {
+    name: "MacBook Pro",
+    pinType: "2 pin"
+};
+var NewPhoneCharge = new PhoneCharger();
+var NewMacBookCharge = new MacBookCharger();
+var ChargePhone = new ChargeDeviceUseCase(NewPhoneCharge);
+ChargePhone.execute(pixelPhone);
+var ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge);
+ChargeMacBook.execute(MacBook);
