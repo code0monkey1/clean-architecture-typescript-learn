@@ -164,7 +164,4 @@ const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
 
 ChargeMacBook.execute(MacBook)
 
-
-
-
 ```
