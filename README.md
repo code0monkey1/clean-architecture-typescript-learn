@@ -28,4 +28,6 @@ etc ...
 
 ## Ports and Adapters
 
-Ports are the interfaces
+Ports are the interfaces that allow the communication between different layers.
+
+Adapters are the
