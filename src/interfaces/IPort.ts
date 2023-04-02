@@ -1,5 +1,4 @@
 
-
  interface  IDevice{
 
   name: string,
@@ -7,16 +6,15 @@
 
 }
 
- interface Port{
+ interface Adapter{
      
      charge(device:IDevice):void;
    
 }
 
+class MacBookAdapter implements Adapter{
 
-class MacBookAdapter implements Port{
-
-  charge(device: IDevice): void {
+  charge(device: IDevice ): void {
       
       console.log("💻 💻 💻 💻 💻 💻")
       console.log("Charging : ",device.name," of pin type : ",device.pinType)
@@ -31,10 +29,23 @@ class MacBookAdapter implements Port{
   
 }
 
+class PhoneAdapter implements Adapter{
 
+  charge(device: IDevice): void {
+     console.log("📱 📱 📱  📱 📱 📱")
+      console.log("Charging : ",device.name," of pin type : ",device.pinType)
+      console.log("🤖 🤖 🤖 🤖 🤖 🤖 ")
+  }
+
+}
 
 class ChargeDeviceUseCase {
      
+  constructor(adapter: Adapter) {
+
+  }
+
+
 
 }
 
