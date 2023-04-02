@@ -1,3 +1,5 @@
+
+
  interface  IDevice{
 
   name: string,
@@ -20,9 +22,10 @@ class MacBookAdapter implements Port{
       console.log("Charging : ",device.name," of pin type : ",device.pinType)
       console.log("🍎 🍎 🍎 🍏 🍏 🍏")
 
-     
       for(let i =0;i<=100;i+=10){
-        
+         setTimeout(()=>{
+           console.log(`Current Charge : ${i} %`)
+         },1000)
       }
   }
   
