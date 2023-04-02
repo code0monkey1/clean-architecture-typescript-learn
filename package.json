@@ -7,8 +7,9 @@
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "build:watch": "npm run build -- --watch",
     "start": "node dist/main/server.js",
+    "dev":"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon dist/main/server.js"
+    "start:dev": "concurrently --kill-others-on-fail \"npm run build:watch\" \"npm run dev\""
   },
   "repository": {
     "type": "git",
