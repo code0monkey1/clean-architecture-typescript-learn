@@ -48,5 +48,5 @@ _Adapters are the the classes , whose constructor has a way to plug the implemen
 
 ![Plugs](pictures/plug.jpeg)
 
-This is the concrete implementation
-that plugs into the adapter in order to communicate with the port.
+_This is the concrete implementation
+that plugs into the adapter in order to communicate with the port._
