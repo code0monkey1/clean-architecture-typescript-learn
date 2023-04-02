@@ -60,7 +60,11 @@ _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port_
 
 ```typescript
+In Typescript Code , this is how we'd
+go about defining the Device Type 
+
 //Device
+
  type TDevice={
 
   name: string,
