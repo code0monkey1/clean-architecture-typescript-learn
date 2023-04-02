@@ -21,8 +21,8 @@ class GreetUserOnEntryWithFlowers implements IGreetUser{
 class GreetUserOnEntryWithKnives implements IGreetUser{
   greet(user: UserData): void {
     console.log("🔪🔪🔪🔪🔪");
-    console.log(user.name)
-    console.log("🗡️🗡️🗡️🗡️🗡️")
+    console.log(user.name);
+    console.log("🗡️🗡️🗡️🗡️🗡️");
   }
   
 }
@@ -43,10 +43,14 @@ class GreetUserUseCase {
 
 }
 
-const greetWithFlowers = new GreetUserOnEntryWithFlowers()
+// const greetWithFlowers = new GreetUserOnEntryWithFlowers()
 
-// const greetWithKnives = new GreetUserOnEntryWithKnives()  
+const greetWithKnives = new GreetUserOnEntryWithKnives()  
 
-const PayingUser = new GreetUserUseCase(greetWithFlowers)
+// const PayingUser = new GreetUserUseCase(greetWithFlowers)
 
-// const DefaultingUser = new GreetUserUseCase(greetWithKnives)
+const DefaultingUser = new GreetUserUseCase(greetWithKnives)
+
+// PayingUser.execute(user)
+
+DefaultingUser.execute(user)
