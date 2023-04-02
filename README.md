@@ -172,6 +172,28 @@ const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
 
 ChargeMacBook.execute(MacBook)
 
+// Output
+
+/* 📱 📱 📱  📱 📱 📱
+Charging : Google Pixel, 
+ of pin type : 3 pin
+🤖 🤖 🤖 🤖 🤖 🤖 
+💻 💻 💻 💻 💻 💻
+Charging :  MacBook Pro  of pin type :  2 pin
+🍎 🍎 🍎 🍏 🍏 🍏
+Current Charge : 0 %
+Current Charge : 10 %
+Current Charge : 20 %
+Current Charge : 30 %
+Current Charge : 40 %
+Current Charge : 50 %
+Current Charge : 60 %
+Current Charge : 70 %
+Current Charge : 80 %
+Current Charge : 90 %
+Current Charge : 100 %
+*/
+
 ```
 
 ## The Dependency Rule
