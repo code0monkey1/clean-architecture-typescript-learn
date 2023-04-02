@@ -2,7 +2,7 @@
 
 ![Clean Architecture](./pictures/CleanArchitecture.jpg)
 
-## Motivation to use the Clean Architecture
+## Motivation to use `Clean Architecture`
 
 **As software complexity grows , so does the overhead of one changing any of the fundamental parts in the given software .**
 
