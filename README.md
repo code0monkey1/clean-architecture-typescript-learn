@@ -174,10 +174,14 @@ ChargeMacBook.execute(MacBook)
 
 // Output
 
-/* 📱 📱 📱  📱 📱 📱
+/* 
+📱 📱 📱  📱 📱 📱
 Charging : Google Pixel, 
  of pin type : 3 pin
 🤖 🤖 🤖 🤖 🤖 🤖 
+
+//--------------------------------
+
 💻 💻 💻 💻 💻 💻
 Charging :  MacBook Pro  of pin type :  2 pin
 🍎 🍎 🍎 🍏 🍏 🍏
