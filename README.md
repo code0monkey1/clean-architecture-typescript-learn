@@ -30,13 +30,19 @@ etc ...
 
 ### Ports
 
-![Port](pictures/port.svg)
-Ports are the interfaces that allow the communication between different layers.
+![Port](pictures/port.jpeg)
+
+1. Ports are the interfaces that allow the communication between different layers.
+
+---
 
 ### Adapters
 
 ![Adapters](pictures/adapter.webp)
-Adapters are the the classes , whose constructor has a way to plug the implementation ( whose type is the Port interface type)
+
+1. Adapters are the the classes , whose constructor has a way to plug the implementation ( whose type is the Port interface type)
+
+---
 
 ### Plugs
 
