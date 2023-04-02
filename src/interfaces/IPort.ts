@@ -6,7 +6,6 @@ export interface  IAppliance{
 
 }
 
-
 export default interface Port{
      
      providePower( appliance : IAppliance)
