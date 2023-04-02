@@ -15,7 +15,10 @@
 class MacBookAdapter implements Port{
 
   charge(device: IDevice): void {
-    throw new Error("Method not implemented.");
+    
+      console.log("💻 💻 💻 💻 💻 💻")
+      console.log("Charging : ",device.name," of pin type : ",device.pinType)
+      console.log("🍎 🍎 🍎 🍏 🍏 🍏")
   }
   
 }
