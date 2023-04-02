@@ -3,11 +3,13 @@ type UserData={
   email:string,
   dateOfBirth:Date
 }
-
+//ICharger
 interface IGreetUser{
+     //charging
      greet(user:UserData):void;
 }
 
+// ChargePhone
 class GreetUserOnEntryWithFlowers implements IGreetUser{
 
   greet(user: UserData): void {
@@ -17,7 +19,7 @@ class GreetUserOnEntryWithFlowers implements IGreetUser{
   }
 
 }
-
+//ChargeLaptop
 class GreetUserOnEntryWithKnives implements IGreetUser{
   greet(user: UserData): void {
     console.log("🔪🔪🔪🔪🔪");
@@ -26,7 +28,7 @@ class GreetUserOnEntryWithKnives implements IGreetUser{
   }
   
 }
-
+// Device Data
 const user:UserData = {
   dateOfBirth:new Date('01/02/1985'),
   email:"vonnaden@gmail.com",
