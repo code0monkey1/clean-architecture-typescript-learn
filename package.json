@@ -30,10 +30,12 @@
     "module-alias": "^2.2.2"
   },
   "_moduleAliases":{
-     "@domain/*":["domain/*"],
-      "@application/*":["application/*"],
-      "@infrastructure/*":["infrastructure/*"],
-      "@main/*":["main/*"],
-      "@test/*":["../test/*"]
+    
+     "@domain":"./dist/domain",
+     "@domain":"./dist/domain",
+     "@domain":"./dist/domain",
+     "@domain":"./dist/domain",
+     "@domain":"./dist/domain"
+    
   }
 }
