@@ -1,5 +1,5 @@
 //Device
- interface  IDevice{
+ type TDevice={
 
   name: string,
   pinType:"2 pin"|"3 pin"
@@ -8,13 +8,14 @@
 //Port
 interface ChargeDevice{
      
-     charge(device:IDevice):void;
+     charge(device:TDevice):void;
+     
    
 }
 //Adapter
 class MacBookCharger implements ChargeDevice{
 
-  charge(device: IDevice ): void {
+  charge(device: TDevice ): void {
       
       console.log("💻 💻 💻 💻 💻 💻")
       console.log("Charging : ",device.name," of pin type : ",device.pinType)
@@ -31,7 +32,7 @@ class MacBookCharger implements ChargeDevice{
 //Adapter
 class PhoneCharger implements ChargeDevice{
 
-  charge(device: IDevice): void {
+  charge(device: TDevice): void {
      console.log("📱 📱 📱  📱 📱 📱")
       console.log("Charging : ",device.name," of pin type : ",device.pinType)
       console.log("🤖 🤖 🤖 🤖 🤖 🤖 ")
@@ -44,12 +45,22 @@ class ChargeDeviceUseCase {
      
   constructor(private readonly adapter : ChargeDevice) {}
 
-   execute( device : IDevice){
+   execute( device : TDevice){
      this.adapter.charge(device);
    }
 
 }
 
+const pixelPhone:TDevice={
+  name:"Google Pixel",
+  pinType:"3 pin"
+}
+
+const ChargePhone = new PhoneCharger()
+
+const ChargeNewDevice =  new ChargeDeviceUseCase(ChargePhone)
+
+ChargeNewDevice.execute(pixelPhone)
 
 
 
