@@ -30,7 +30,7 @@ etc ...
 
 ### Ports
 
-<img src='./pictures/port.jpeg' width="200" height="200"/>
+<img src='./pictures/port.jpeg' width="300" height="300"/>
 
 _Ports are the interfaces to which adapters can connect to_
 
@@ -38,7 +38,7 @@ _Ports are the interfaces to which adapters can connect to_
 
 ### Adapters
 
-<img src='./pictures/adapter.webp' width="200" height="200"/>
+<img src='./pictures/adapter.webp' width="300" height="300"/>
 
 _Adapters are the structures that allow the plugs to access and interact with the ports_
 
@@ -46,7 +46,7 @@ _Adapters are the structures that allow the plugs to access and interact with th
 
 ### Plugs
 
-<img src='./pictures/plug.jpeg' width="200" height="200"/>
+<img src='./pictures/plug.jpeg' width="300" height="300"/>
 
 _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port_
@@ -55,4 +55,4 @@ that plugs into the adapter in order to communicate with the port_
 
 ### The Whole Setup in Action
 
-<img src='./pictures/setup.jpg' width="200" height="200"/>
+<img src='./pictures/setup.jpg' width="300" height="300"/>
