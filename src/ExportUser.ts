@@ -3,15 +3,18 @@ type UserData={
   email:string,
   dateOfBirth:Date
 }
+
 //ICharger
 interface IGreetUser{
-     //charging
+
+     //charge
      greet(user:UserData):void;
+
 }
 
 // ChargePhone
 class GreetUserOnEntryWithFlowers implements IGreetUser{
-
+  //charge
   greet(user: UserData): void {
     console.log("🌸🌺🌷💐🌸🌺🌷 ")
     console.log(user.name)
@@ -21,6 +24,7 @@ class GreetUserOnEntryWithFlowers implements IGreetUser{
 }
 //ChargeLaptop
 class GreetUserOnEntryWithKnives implements IGreetUser{
+  //charge
   greet(user: UserData): void {
     console.log("🔪🔪🔪🔪🔪");
     console.log(user.name);
