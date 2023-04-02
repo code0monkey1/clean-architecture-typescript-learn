@@ -158,17 +158,16 @@ const MacBook:TDevice={
   pinType:"2 pin"
 }
 
-const NewPhoneCharge = new PhoneCharger()
+const PhoneAdapter = new PhoneCharger()
 
-const NewMacBookCharge = new MacBookCharger()
+const MacBookAdapter = new MacBookCharger()
 
 
-const ChargePhone =  new ChargeDeviceUseCase(NewPhoneCharge)
+const ChargePhone =  new ChargeDeviceUseCase(PhoneAdapter)
 
 ChargePhone.execute(pixelPhone)
 
-
-const ChargeMacBook = new ChargeDeviceUseCase(NewMacBookCharge)
+const ChargeMacBook = new ChargeDeviceUseCase(MacBookAdapter)
 
 ChargeMacBook.execute(MacBook)
 
