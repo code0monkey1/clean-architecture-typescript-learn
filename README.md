@@ -180,3 +180,5 @@ ChargeMacBook.execute(MacBook)
 > the outer circle
 
 It is imperative that we ensure that none of the structures in the inner layers can know about any of the outer layers, but the outer layers `can and should` know about the inner layers .
+
+In other words , `Source code dependencies can only point inwards , and not outwards`
