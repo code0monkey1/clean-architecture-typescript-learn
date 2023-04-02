@@ -7,5 +7,4 @@ export class Adapter implements IPort {
     throw new Error('Method not implemented.');
   }
 
-
 }
