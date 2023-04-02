@@ -176,8 +176,9 @@ ChargeMacBook.execute(MacBook)
 
 ## The Dependency Rule
 
-> Nothing in the inner circle can know about
-> the outer circle
+> " The name of something declared in an outer circle must not be mentioned by the code in the an inner circle . That includes, functions, classes, variables, or any other named software entity. "
+>
+> -- Uncle Bob
 
 It is imperative that we ensure that none of the structures in the inner layers can know about any of the outer layers, but the outer layers `can and should` know about the inner layers .
 
