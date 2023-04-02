@@ -184,3 +184,5 @@ It is imperative that we ensure that none of the structures in the inner layers 
 In other words , `Source code dependencies can only point inwards , and not outwards`
 
 i.e  It is ok for `UseCase` structures to know about `Entities` , but it's not ok the other way around .
+
+However , the communication between the different layers will always take place through interfaces , and never directly.
