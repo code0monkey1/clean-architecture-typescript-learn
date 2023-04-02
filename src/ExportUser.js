@@ -33,6 +33,6 @@ var GreetUserUseCase = /** @class */ (function () {
     return GreetUserUseCase;
 }());
 var greetWithFlowers = new GreetUserOnEntryWithFlowers();
-var greetWithKnives = new GreetUserOnEntryWithKnives();
+// const greetWithKnives = new GreetUserOnEntryWithKnives()  
 var PayingUser = new GreetUserUseCase(greetWithFlowers);
-var DefaultingUser = new GreetUserUseCase(greetWithKnives);
+// const DefaultingUser = new GreetUserUseCase(greetWithKnives)

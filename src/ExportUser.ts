@@ -45,8 +45,8 @@ class GreetUserUseCase {
 
 const greetWithFlowers = new GreetUserOnEntryWithFlowers()
 
-const greetWithKnives = new GreetUserOnEntryWithKnives()  
+// const greetWithKnives = new GreetUserOnEntryWithKnives()  
 
 const PayingUser = new GreetUserUseCase(greetWithFlowers)
 
-const DefaultingUser = new GreetUserUseCase(greetWithKnives)
+// const DefaultingUser = new GreetUserUseCase(greetWithKnives)
