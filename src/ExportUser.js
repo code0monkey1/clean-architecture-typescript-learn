@@ -32,9 +32,9 @@ var GreetUserUseCase = /** @class */ (function () {
     };
     return GreetUserUseCase;
 }());
-// const greetWithFlowers = new GreetUserOnEntryWithFlowers()
+var greetWithFlowers = new GreetUserOnEntryWithFlowers();
 var greetWithKnives = new GreetUserOnEntryWithKnives();
-// const PayingUser = new GreetUserUseCase(greetWithFlowers)
-var DefaultingUser = new GreetUserUseCase(greetWithKnives);
-// PayingUser.execute(user)
-DefaultingUser.execute(user);
+var PayingUser = new GreetUserUseCase(greetWithFlowers);
+var GreetDefaultingUser = new GreetUserUseCase(greetWithKnives);
+PayingUser.execute(user);
+GreetDefaultingUser.execute(user);

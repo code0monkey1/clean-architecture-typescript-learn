@@ -43,14 +43,14 @@ class GreetUserUseCase {
 
 }
 
-// const greetWithFlowers = new GreetUserOnEntryWithFlowers()
+const greetWithFlowers = new GreetUserOnEntryWithFlowers()
 
 const greetWithKnives = new GreetUserOnEntryWithKnives()  
 
-// const PayingUser = new GreetUserUseCase(greetWithFlowers)
+const PayingUser = new GreetUserUseCase(greetWithFlowers)
 
-const DefaultingUser = new GreetUserUseCase(greetWithKnives)
+const GreetDefaultingUser = new GreetUserUseCase(greetWithKnives)
 
-// PayingUser.execute(user)
+PayingUser.execute(user)
 
-DefaultingUser.execute(user)
+GreetDefaultingUser.execute(user)
