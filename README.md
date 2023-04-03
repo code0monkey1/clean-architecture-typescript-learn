@@ -235,4 +235,5 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 1. Create folders `src` and `test`.
 1. Integrate typescript into the project by using `npm i -D typescript @types/node` , which installs typescript as a dev dependency , and the node type declarations to make working with node using typescript, compatible.
 1. Now to initialize all the tooling for this typescript node project, run `npx tsc --init` , which will create the `tsconfig.json` file with the default settings.
-1.
+1.Within the newly created tsconfig.json file, go to `outDir` option , and select the output of the typescript to javascript compiled files to be put in the `dist` folder.
+    >Like So :   `"outDir": "./dist"`
