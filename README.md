@@ -272,10 +272,11 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     >
     >`domain` , `application` and `infrastructure` are the 3 separate layers in our clean architecture setup .
     >
-    >The `main` layer serves as the entry point for our application , and will have the `server` file , which would start out application.
+    >The `main` layer serves as the entry point for our application , and will have the `server.ts` file , which would start out application.
     >
     >Finally the `test` layer will contain all our `unit` and `integration` test files.
 
-1. Next , go on and create all the above mentioned folders in the src folder `domain` `application`  `infrastructure` `main` . The `test` folder will be created outside the src folder.
+1. Next , go on and create all the above mentioned folders in the src folder `domain` , `application` , `infrastructure` , `main` ( with a `server.ts` file ) .
+The `test` folder will be created outside the src folder.
 
 1.
