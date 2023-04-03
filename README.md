@@ -268,4 +268,4 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     >
     >Keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
     >
-    >So, for example the `@test` reference will refer to the test folder inside our project , which is one folder above our src folder , hence this `["../test/_"]` is how we specify it's relative position w.r.t our baseUrl (src).
+    >So, for example the `@test` reference will refer to the test folder inside our project , which is one folder above our src folder , hence this `["../test/_"]` is how we specify it's relative position w.r.t our `baseUrl (src)`.
