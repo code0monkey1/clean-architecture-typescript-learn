@@ -264,7 +264,7 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     }
       ```
 
-    > In this above code block , we set 5 different    directory references for 5 folders we are about to create.  
+    > In this above code block , we set 5 different    directory references for 5 folders we are about to create in the next few steps.  
     >
     >Keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
     >
@@ -276,6 +276,6 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     >
     >Finally the `test` layer will contain all our `unit` and `integration` test files.
 
-1. Next , go on and create all the above mentioned folders in the src folder `domain` `application`  `infrastructure` `main` and the `test` folder , right outside the src folder.
+1. Next , go on and create all the above mentioned folders in the src folder `domain` `application`  `infrastructure` `main` . The `test` folder will be created outside the src folder.
 
 1.
