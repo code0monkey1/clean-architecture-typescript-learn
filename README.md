@@ -322,4 +322,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       "build": "rimraf dist && tsc -p tsconfig-build.json",
     ```
 
-    >The build script removes the older dist folder and all files in it , and then runs the typescript compile command to create fresh files and folders using the typescript configurations for build time ( which does not include unnecessary files like `test` by using the `tsconfig-build.json` file )
+    > the rimraf
+    > package provides a cross-platform solution for deleting files and folders, which can be useful if you are working on a project that needs to run on multiple operating systems.
+    >
+    >We run the typescript compile command to create fresh files and folders using the typescript configurations for build time ( which does not include unnecessary files like `test` by using the `tsconfig-build.json` file )
