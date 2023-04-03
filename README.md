@@ -245,7 +245,7 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
     "outDir": "./dist"
     ```
 
-2. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
+1. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
 
     ```json
      "baseUrl": "./src"
@@ -276,7 +276,7 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     >
     >Finally the `test` layer will contain all our `unit` and `integration` test files.
 
-1. Next , go on and create all the above mentioned folders in the src folder `domain` , `application` , `infrastructure` , `main` ( with a `server.ts` file ) .
+1. Next , go on and create all the above mentioned folders in the src folder `domain` , `application` , `infrastructure` , `main` , and also create a `server.ts` file within the `main` folder.
 The `test` folder will be created outside the src folder.
 
 1.
