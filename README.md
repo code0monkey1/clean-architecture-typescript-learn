@@ -306,8 +306,9 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
          ```json
             {
-            "extends":"./tsconfig.json",
-            "exclude": ["test"]
-          }
-  
+              "extends":"./tsconfig.json",
+              "exclude": ["test"]
+            }
          ```
+
+1.
