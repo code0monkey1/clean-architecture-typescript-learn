@@ -232,8 +232,12 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 ### Steps
 
 1. Initiate node project using `npm init -y` , which will create the `package.json` file with the default settings.
+
 1. Create folders `src` and `test`.
-1. Integrate typescript into the project by using `npm i -D typescript @types/node` , which installs typescript as a dev dependency , and the node type declarations to make working with node using typescript, compatible.
-1. Now to initialize all the tooling for this typescript node project, run `npx tsc --init` , which will create the `tsconfig.json` file with the default settings.
-1.Within the newly created tsconfig.json file, go to `outDir` option , and select the output of the typescript to javascript compiled files to be put in the `dist` folder.
+  
+1. Integrate typescript into the project by using `npm i -D typescript @types/node` , which installs typescript as a dev dependency , and the node type declarations to make working with node using typescript compatible.
+
+1. To initialize all the tooling for this typescript node project, run `npx tsc --init` , which will create the `tsconfig.json` file with the default settings.
+
+1. Within the newly created tsconfig.json file, go to `outDir` option , and select the output of the typescript to javascript compiled files to be put in the `dist` folder.
     >Like So :   `"outDir": "./dist"`
