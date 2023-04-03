@@ -256,3 +256,6 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
       "@test/_":["../test/_"],
     }
       ```
+
+In this above code block , we set 5 different directory references , for 5 folders we are about to create , and keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
+So, for example the `@test` reference , will refer to the test folder inside our project , which is one folder outside our src folder , hence this `["../test/_"]` is how we set it up.
