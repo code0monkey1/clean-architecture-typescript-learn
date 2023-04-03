@@ -126,9 +126,9 @@ go about defining the Device Type
 
 ---
 
-### The Whole Setup in Action
+## The Whole Setup in Action
 
- `UseCase : ChargeDevice`
+#### `UseCase : ChargeDevice`
 
   ---
   
