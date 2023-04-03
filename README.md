@@ -240,14 +240,20 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 1. To initialize all the tooling for this typescript node project, run `npx tsc --init` , which will create the `tsconfig.json` file with the default settings.
 
 1. Within the newly created tsconfig.json file, go to `outDir` option , and select the folder to which the compiled javascript compiled will be put into. We choose a folder name `dist` for this purpose _( you could name it whatever you want )_.
-    >`"outDir": "./dist"`
 
-1. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
-   >`"baseUrl": "./src"`
+    ```json
+    "outDir": "./dist"
+    ```
+
+2. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
+
+  ```json
+   "baseUrl": "./src"
+  ```
 
 1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in out project.All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
 
-      ```typescript
+      ```json
       "paths": {
       "@domain/_":["domain/_"],
       "@application/_":["application/_"],
@@ -258,4 +264,4 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
       ```
 
 In this above code block , we set 5 different directory references , for 5 folders we are about to create , and keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
-So, for example the `@test` reference , will refer to the test folder inside our project , which is one folder outside our src folder , hence this `["../test/_"]` is how we set it up.
+So, for example the `@test` reference , will refer to the test folder inside our project , which is one folder outside our src folder , hence this `["../test/_"]` is how show it's relative position within out project.
