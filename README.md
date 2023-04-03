@@ -232,5 +232,5 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 ### Steps
 
 1. Initiate node project using `npm init -y` , which will create the `package.json` file with the default settings.
-1. Next , create folders `src` and `test`.
-1.
+1. Create folders `src` and `test`.
+1. Integrate typescript into the project by using `npm i -D typescript @types/node`
