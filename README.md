@@ -321,3 +321,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
     ```json
       "build": "rimraf dist && tsc -p tsconfig-build.json",
     ```
+
+    >The build script removes the older dist folder and all files in it , and then runs the typescript compile command to create fresh files and folders
