@@ -128,6 +128,15 @@ go about defining the Device Type
 
 ### The Whole Setup in Action
 
+  ---
+  
+  | PORT | ADAPTER | DEVICE |
+  |:----:|:----:|:----:|
+  |ChargeDevice|MacBookCharger|MacBook|
+  |ChargeDevice|PhoneCharger|PixelPhone|
+  
+  ---
+
 <img src='./pictures/macbookCharging.jpg' width="300" height="300"/>
 
 ---
@@ -148,7 +157,7 @@ class ChargeDeviceUseCase {
 
 }
 
-const pixelPhone:TDevice={
+const PixelPhone:TDevice={
   name:"Google Pixel",
   pinType:"3 pin"
 }
@@ -165,7 +174,7 @@ const MacBookAdapter = new MacBookCharger()
 
 const ChargePhone =  new ChargeDeviceUseCase(PhoneAdapter)
 
-ChargePhone.execute(pixelPhone)
+ChargePhone.execute(PixelPhone)
 
 const ChargeMacBook = new ChargeDeviceUseCase(MacBookAdapter)
 
@@ -198,11 +207,6 @@ Current Charge : 100 %
 */
 
 ```
-
-| PORT | ADAPTER | DEVICE |
-|:----:|:----:|:----:|
-|ChargeDevice|MacBookCharger|MacBook|
-|ChargeDevice|PhoneCharger|pixelPhone|
 
 ## The Dependency Rule
 
