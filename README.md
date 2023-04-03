@@ -14,8 +14,8 @@ _A great way to manage complexity is to arrange the code into layers of abstract
 with the lower layers not knowing about the concrete implementation of the upper layers
 , and them communicating with each other only through adapters ( abstract interfaces )._
 
-**This way , one can easily make  changes to any of the layers any time , and
-there would the need of multilayer changes , as the shape of the adapters ( abstract interfaces ) would never be changed , and only the concrete implementation in a specific layer would be modified.**
+**This way , one can easily make changes to any of the layers at any time , and
+there would be no need for multilayer changes , as the shape of the adapters ( abstract interfaces ) would never be changed , and only the concrete implementation in a specific layer would be modified.**
 
 If everything goes well in the architectural process , we end up with software layers that are independent of the specificities of the type of UI used , the concrete implementation of the Data Base used
 etc ...
