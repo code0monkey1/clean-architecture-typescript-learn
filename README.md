@@ -290,7 +290,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             ]
     ```
 
-1. Next we specify the folders that we want to be included for the compilation process during `development`, and  the `build` phase. During the development phase , it makes sense to include the `test` files for compilation.
+1. Next we specify the folders that we want to be included for the compilation process during `development`, and  the `build` phase. During the development phase , it makes sense to include the `test` files for compilation.So, go to the `include` attribute in the `tsconfig.json` file, and include `src` and `test` .
 
     ```json
         "include": [
@@ -301,6 +301,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
      ```
 
 1. However, the `test` files  should be excluded in the `build` phase , as test files are not useful for deployment purposes.
-So, go to the `include` attribute in the `tsconfig.json` file, and include `src` and `test` .
 
-      - For this we will create an extra `tsconfig` file : `tsconfig-build.json` ( the configuration for the build phase)
+      - For this we will create an extra `tsconfig` file : `tsconfig-build.json` ( the configuration for the build phase )
