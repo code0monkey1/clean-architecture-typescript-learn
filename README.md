@@ -264,6 +264,8 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     }
       ```
 
+    This is how we'll reference files in our project using `paths` attribute eg : `import CreateUserUseCase from`@application/useCases/CreateUserUseCase`
+    >
     > In this above code block , we set 5 different    directory references for 5 folders we are about to create in the next few steps.  
     >
     >Keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
