@@ -294,10 +294,9 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
     ```json
         "include": [
-      "src",
-      "test"
-  
-      ]
+            "src",
+            "test"
+          ]
      ```
 
 1. However, the `test` files  should be excluded in the `build` phase , as test files are not useful for deployment purposes.
@@ -313,8 +312,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
 1. Next , we update our `package.json` file to use the compiled `javascript` files for running the application, by setting the `main` attribute in `package.json` to `dist/main/server.js` , so that our node app uses `server.js` to run the application.
 
-  ```json
-   "main": "dist/main/server.js"
-  ```
+      ```json
+       "main": "dist/main/server.js"
+      ```
 
 1.
