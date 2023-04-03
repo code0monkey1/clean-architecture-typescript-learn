@@ -316,4 +316,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
        "main": "dist/main/server.js"
       ```
 
-1.
+1. Now we install 2 dev dependency packages, to help us during the build process  `npm i -D rimraf concurrently`
+
+      1. `rimraf` ( used to remove older `build` file before creating a new one )
+      2.
