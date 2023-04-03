@@ -246,4 +246,10 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
    >`"baseUrl": "./src"`
 
 1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in out project.All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
-      1.Set
+      >`"paths": {
+      "@domain/*":["domain/*"],
+      "@application/*":["application/*"],
+      "@infrastructure/*":["infrastructure/*"],
+      "@main/*":["main/*"],
+      "@test/*":["../test/*"],
+    }`
