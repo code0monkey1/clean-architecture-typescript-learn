@@ -251,7 +251,8 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
      "baseUrl": "./src"
     ```
 
-1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in out project.All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
+1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in our project.
+All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
 
       ```json
       "paths": {
@@ -263,5 +264,6 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
     }
       ```
 
-In this above code block , we set 5 different directory references , for 5 folders we are about to create , and keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
-So, for example the `@test` reference , will refer to the test folder inside our project , which is one folder outside our src folder , hence this `["../test/_"]` is how show it's relative position within out project.
+    >In this above code block , we set 5 different directory references for 5 folders we are about to create .
+    >Keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
+    So, for example the `@test` reference will refer to the test folder inside our project , which is one folder above our src folder , hence this `["../test/_"]` is how we specify it's relative position w.r.t our baseUrl (src).
