@@ -322,7 +322,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       "build": "rimraf dist && tsc -p tsconfig-build.json",
     ```
 
-    > the rimraf
-    > package provides a cross-platform solution for deleting files and folders, which can be useful if you are working on a project that needs to run on multiple operating systems.
+    >The rimraf package provides a cross-platform solution for deleting files and folders, which can be useful if you are working on a project that needs to run on multiple operating systems.
     >
-    >We run the typescript compile command to create fresh files and folders using the typescript configurations for build time ( which does not include unnecessary files like `test` by using the `tsconfig-build.json` file )
+    > By running the build command, we are able to  compile fresh files and folders using the typescript configurations for build time ( which does not include unnecessary files like `test` by using the `tsconfig-build.json` file )
