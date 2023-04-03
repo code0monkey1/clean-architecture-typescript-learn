@@ -264,6 +264,8 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
     }
       ```
 
-    >In this above code block , we set 5 different directory references for 5 folders we are about to create .
+    > In this above code block , we set 5 different    directory references for 5 folders we are about to create.  
+    >
     >Keep in mind that all of these folders are placed relative to the `baseUrl (i.e. ./src)` , in our case .
-    So, for example the `@test` reference will refer to the test folder inside our project , which is one folder above our src folder , hence this `["../test/_"]` is how we specify it's relative position w.r.t our baseUrl (src).
+    >
+    >So, for example the `@test` reference will refer to the test folder inside our project , which is one folder above our src folder , hence this `["../test/_"]` is how we specify it's relative position w.r.t our baseUrl (src).
