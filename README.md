@@ -199,6 +199,11 @@ Current Charge : 100 %
 
 ```
 
+| PORT | ADAPTER | DEVICE |
+|:----:|:----:|:----:|
+|ChargeDevice|MacBookCharger|MacBook|
+|ChargeDevice|PhoneCharger|pixelPhone|
+
 ## The Dependency Rule
 
 > " The name of something declared in an outer circle must not be mentioned by the code in the an inner circle . That includes, functions, classes, variables, or any other named software entity. "
