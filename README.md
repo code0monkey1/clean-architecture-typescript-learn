@@ -311,4 +311,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             }
          ```
 
-1.
+1. Next , we update our `package.json` file to use the compiled `javascript` files for running the application, by setting the `main` attribute in `package.json` to `dist/main/server.js` , so that our node app uses `server.js` to run the application.
+
+  ```json
+   "main": "dist/main/server.js"
+  ```
