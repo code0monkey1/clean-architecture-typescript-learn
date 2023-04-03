@@ -239,5 +239,7 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 
 1. To initialize all the tooling for this typescript node project, run `npx tsc --init` , which will create the `tsconfig.json` file with the default settings.
 
-1. Within the newly created tsconfig.json file, go to `outDir` option , and select the output of the typescript to javascript compiled files to be put in the `dist` folder.
-    >Like So :   `"outDir": "./dist"`
+1. Within the newly created tsconfig.json file, go to `outDir` option , and select the folder to which the compiled javascript compiled will be put into. We choose a folder name `dist` for this purpose _( you could name it whatever you want )_.
+    >`"outDir": "./dist"`
+
+1. Next
