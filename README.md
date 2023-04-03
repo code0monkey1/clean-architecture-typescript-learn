@@ -227,7 +227,7 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 
 ---
 
-## Setting Up A `Node.js + Typescript` Project With `Clean Architecture`
+## Setting up a `Node.js + Typescript` project with `Clean Architecture`
 
 ### Steps
 
