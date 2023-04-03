@@ -316,4 +316,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
        "main": "dist/main/server.js"
       ```
 
-1. Now we install the `rimraf` dev dependency ( used to remove older `build` file before creating a new one ) packages, to help us during the build process  `npm i -D rimraf`
+1. Now we install the `rimraf` dev dependency ( used to remove older `build` file before creating a new one ) packages, to help us during the build process  `npm i -D rimraf`. And then we write our build script using this package.
+
+    ```json
+      "build": "rimraf dist && tsc -p tsconfig-build.json",
+    ```
