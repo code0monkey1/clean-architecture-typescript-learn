@@ -245,5 +245,5 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 1. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
    >`"baseUrl": "./src"`
 
-1. Next set the directory references , which will allow us to easily reference different files in out project.All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
-     - Set `
+1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in out project.All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
+      1.Set
