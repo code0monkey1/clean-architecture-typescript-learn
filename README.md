@@ -289,3 +289,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               "test"
             ]
     ```
+
+1. Next we specify the folders that we want to be included for the compilation process during `development`, and  the `build` phase.
