@@ -242,4 +242,5 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 1. Within the newly created tsconfig.json file, go to `outDir` option , and select the folder to which the compiled javascript compiled will be put into. We choose a folder name `dist` for this purpose _( you could name it whatever you want )_.
     >`"outDir": "./dist"`
 
-1. Next
+1. Next set up the `baseUrl` option in the `tsconfig.json` file to be `src`.
+   >`"baseUrl": "./src"`
