@@ -130,10 +130,10 @@ go about defining the Device Type
 
   ---
   
-  | PORT | ADAPTER | DEVICE |
-  |:----:|:----:|:----:|
-  |ChargeDevice|MacBookCharger|MacBook|
-  |ChargeDevice|PhoneCharger|PixelPhone|
+  | PORT | ADAPTER | DEVICE | USE CASE |
+  |:----:|:----:|:----:|:----:|
+  |ChargeDevice|MacBookCharger|MacBook|ChargeMacBook|
+  |ChargeDevice|PhoneCharger|PixelPhone|ChargePhone|
   
   ---
 
@@ -146,7 +146,6 @@ go about defining the Device Type
 ```typescript
 
 // Charging a Device
-
 class ChargeDeviceUseCase {
      
   constructor(private readonly adapter : ChargeDevice) {}
