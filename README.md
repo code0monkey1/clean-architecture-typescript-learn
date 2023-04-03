@@ -302,4 +302,4 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
 1. However, the `test` files  should be excluded in the `build` phase , as test files are not useful for deployment purposes.
 
-      - For this we will create an extra `tsconfig` file : `tsconfig-build.json` ( the configuration for the build phase )
+      - For this we will create an extra `tsconfig` file : `tsconfig-build.json` ( the configuration for the build phase ) , which will inherit all the configuration from the `tsconfig.json` file, but will exclude the `test` files for compilation during build.
