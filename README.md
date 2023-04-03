@@ -280,5 +280,12 @@ All these modules will be set in reference to the `baseUrl (i.e : src)` in our p
 
 1. Next , go on and create all the above mentioned folders in the src folder `domain` , `application` , `infrastructure` , `main` , and also create a `server.ts` file within the `main` folder. The `test` folder will be created outside the src folder.
 
-1. Now , we need to specify `rootDirs` attribute in the `tsconfig.json` file , which specifies where all our typescript files would be located in our project.
-This would have our `src` and `test` folder , which will contain all our typescript files.
+1. Now , we need to specify `rootDirs` attribute in the `tsconfig.json` file , which specifies where all the typescript files would be located in our project.
+This would have our `src` and `test` folder , which  contain all our typescript files.
+
+    ```json
+        "rootDirs": [
+              "src",
+              "test"
+            ]
+    ```
