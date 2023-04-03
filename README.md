@@ -231,6 +231,6 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 
 ### Steps
 
-1 . Initiate node project using `npm init`
-
-
+1. Initiate node project using `npm init -y` , which will create the `package.json` file with the default settings.
+1. Next , create folders `src` and `test`.
+1.
