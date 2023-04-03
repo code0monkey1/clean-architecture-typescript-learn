@@ -234,4 +234,4 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
 1. Initiate node project using `npm init -y` , which will create the `package.json` file with the default settings.
 1. Create folders `src` and `test`.
 1. Integrate typescript into the project by using `npm i -D typescript @types/node` , which installs typescript as a dev dependency , and the node type declarations to make working with node using typescript, compatible.
-1.
+1. Now to initialize all the tooling for typescript, run `npx tsc --init`
