@@ -128,11 +128,9 @@ go about defining the Device Type
 
 ## The Whole Setup in Action
 
-#### `UseCase : ChargeDevice`
+### `UseCase : ChargeDevice`
 
-  ---
-  
-  | PORT | ADAPTER | DEVICE | USE CASE |
+  | PORT | ADAPTER | DEVICE | USE CASE INSTANCE |
   |:----:|:----:|:----:|:----:|
   |ChargeDevice|MacBookCharger|MacBook|ChargeMacBook|
   |ChargeDevice|PhoneCharger|PixelPhone|ChargePhone|
