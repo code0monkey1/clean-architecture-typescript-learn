@@ -290,4 +290,4 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             ]
     ```
 
-1. Next we specify the folders that we want to be included for the compilation process during `development`, and  the `build` phase.
+1. Next we specify the folders that we want to be included for the compilation process during `development`, and  the `build` phase. During the development phase , it makes sense to include the `test` files for compilation , but this should be excluded in the `build` phase , as test files are not useful for deployment purposes.
