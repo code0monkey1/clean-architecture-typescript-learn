@@ -595,7 +595,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
                                 }
                           ```
 
-1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest.  
+1. Next, we're going to add an `in memory implementation of mongodb` for testing with jest.  
       1. Install `@shelf/jest-mongodb` package as a dev dependency.
 
             ``` 
@@ -625,3 +625,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             ```
       1. Use `mongod --version` to find out the version of the mongodb running on your system ,and set the same version number in the`version` attribute of  the `jest-mongodb-config.js` file.
       1.This package creates the file `globalConfig.json` in the project root . This is not necessary to be committed , so  add `globalConfig.json` to `ignored files` in `.gitignore`.
+
+1. Finally, adding `supertest` , the last dependency of our project.
+      
