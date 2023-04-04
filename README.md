@@ -493,7 +493,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
         ```
 
-    1. Now we create a script  in our `package.json` file for linting using `eslint`
+    1. Now we create a script  in our `package.json` file for linting using `eslint`. In this file , we re-use the existing information in the `.gitignore` file to avoid linting the ignored files.
 
      ```json
       \\package.json
