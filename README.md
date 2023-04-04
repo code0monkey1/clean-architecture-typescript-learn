@@ -449,7 +449,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       1. Now in the we need to add support for typescript files in test , in the `jest.config.js` file .
 
-           ```json
+          ```json
              //jest.config.js
              
               //this will come at the top of the file outside the `module.exports` function
@@ -458,8 +458,9 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             
               //the transform property will me modified likewise   
     
-            transform: {
-            ...tsjPreset.transform,
-            },
+              transform: {
+              ...tsjPreset.transform,
+              },
+          ```
 
-           ```
+      1. Finally add the scripts in the `package.json` file
