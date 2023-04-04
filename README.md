@@ -485,4 +485,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
     1. Now we create a script  in our `package.json` file for linting using `eslint`
 
+     ```json
       \\package.json
+
+      "lint":"eslint --ext .ts src/"
+     ```
