@@ -399,4 +399,15 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
           <img src='./pictures/jest_coverage.jpg' alt='coverage' width='auto' height='300' />
 
-      1. Now we go to the generated `jest.config.js` file
+      1. Now we go to the generated `jest.config.js` file and go to  the `collectCoverageFrom` property to set  which all folders and files will be tested.
+
+         ```json
+          //jest.config.js
+
+          collectCoverageFrom: [
+          '<rootDir>/src/**/*.ts',
+          '!<rootDir>/src/main/**/*.ts',
+            ],
+
+         ```
+  
