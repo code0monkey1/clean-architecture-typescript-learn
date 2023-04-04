@@ -402,11 +402,12 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       1. Now we go to the generated `jest.config.js` file and go to  the `collectCoverageFrom` property to set  which all folders and files will be evaluated for test coverage. We do not include the `main` folder in the test coverage as it will mainly include glue-code , whose functionality can be tested better with integration tests, which we will be adding later.
 
           ```json
-            //jest.config.js
+          //jest.config.js
   
             collectCoverageFrom: [
             '<rootDir>/src/**/*.ts',
             '!<rootDir>/src/main/**/*.ts',
-              ],
+                  ]
           ```
-  
+
+      1.
