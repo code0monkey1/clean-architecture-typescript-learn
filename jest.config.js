@@ -96,7 +96,7 @@ module.exports = {
     "@application/(.*)": "<rootDir>/src/application/$1",
     "@infrastructure/(.*)": "<rootDir>/src/infrastructure/$1",
     "@main/(.*)": "<rootDir>/src/main/$1",
-    "@tests/(.*)": "<rootDir>/tests/$1",
+    "@test/(.*)": "<rootDir>/test/$1",
    },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

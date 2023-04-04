@@ -416,4 +416,16 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               coverageDirectory: "coverage",
           ```
 
-      1. Next , we set the property `ModuleNameMapper` , which maps the name of the modules we've defined , i.e `domain` `application` etc , with respect to the `<rootDir>`.
+      1. Next , we set the property `moduleNameMapper` , which maps the name of the modules we've defined , i.e `domain` `application` etc , with respect to the `<rootDir>`.
+  
+          ```json
+           //jest.config.js
+           
+            moduleNameMapper: {
+              "@domain/(.*)": "<rootDir>/src/domain/$1",
+              "@application/(.*)": "<rootDir>/src/application/$1",
+              "@infrastructure/(.*)": "<rootDir>/src/infrastructure/$1",
+              "@main/(.*)": "<rootDir>/src/main/$1",
+              "@test/(.*)": "<rootDir>/test/$1",
+             },
+          ```
