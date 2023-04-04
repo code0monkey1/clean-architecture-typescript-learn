@@ -584,11 +584,18 @@ This would have our `src` and `test` folder , which  contain all our typescript 
          ```
 
       1. Next, ensure to run eslint every time you save your file .
-                + Install eslint plugin if not already installed
-                + press `Cmd + shift + P` , then select Preferences: `Open user settings(JSON)`
-                + Then set :
-                      ```json
-                       "editor.codeActionsOnSave": {
-                       "source.fixAll.eslint": true,
-                       }
-                      ```
+                      + Install eslint plugin if not already installed.
+                      + press `Cmd + shift + P` , then select `Preferences: Open user settings(JSON)`.
+                      + Then set in `settings.json` :
+                            \\json
+                             "editor.codeActionsOnSave": {
+                             "source.fixAll.eslint": true,
+                              }
+1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest.
+         1. For this, we first install a package called `@shelf/jest-mongodb` , which will be installed in `dev mode`
+               
+             ```terminal
+             
+               npm i -D  @shelf/jest-mongodb
+            ```
+
