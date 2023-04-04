@@ -343,9 +343,11 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       1. For the `module-alias` package to recognize our defined package structure , during build time, our files, we need to create a mapping  similar to the tsconfig.json file structure in our package.json file .
 
-      1. Next, we define a file  structure similar to the one we defined in the tsconfig.json file in our package.json file
+      1. Next, we define a file  structure similar to the one we defined in the tsconfig.json file in our `package.json` file, which references the compiled `.js` files in the `dist` folder which will eventually be used in production. Notice we didn't include the `tests` directory , as it's not required in production.
 
            ```json
+            \\package.json
+
             "_moduleAliases": {
               "@domain": "./dist/domain",
               "@application": "./dist/application",
