@@ -315,12 +315,15 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 1. Next , we update our `package.json` file to use the compiled `javascript` files for running the application, by setting the `main` attribute in `package.json` to `dist/main/server.js` , so that our node app uses `server.js` to run the application.
 
       ```json
+
        "main": "dist/main/server.js"
       ```
 
 1. Now we install the `rimraf` package (dev dependency) ( used to remove the older `dist` folder before creating a new one ) , to help us during the build process  `npm i -D rimraf`. And then we write our build script using this package.
 
     ```json
+      \\package.json
+
       "build": "rimraf dist && tsc -p tsconfig-build.json",
       "build:watch":"npm run build -- --watch",
     ```
