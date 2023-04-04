@@ -446,3 +446,16 @@ This would have our `src` and `test` folder , which  contain all our typescript 
          ```terminal
           npm install --save-dev ts-jest
          ```
+
+      1. Now in the we need to add support for typescript files in test , in the `jest.config.js` file .
+
+           ```json
+             //jest.config.js
+
+             const { defaults: tsjPreset } = require('ts-jest/presets')
+                    
+            transform: {
+            ...tsjPreset.transform,
+            },
+
+           ```
