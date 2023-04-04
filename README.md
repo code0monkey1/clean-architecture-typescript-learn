@@ -322,6 +322,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
     ```json
       "build": "rimraf dist && tsc -p tsconfig-build.json",
+      "build:watch":"npm run build -- --watch",
     ```
 
     >The `rimraf` package provides a cross-platform solution for deleting files and folders, which can be useful if you are working on a project that needs to run on multiple operating systems.
