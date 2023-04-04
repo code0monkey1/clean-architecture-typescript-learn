@@ -463,7 +463,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               },
           ```
 
-      1. Finally add the scripts in the `package.json` file for running tests in various scenarios
+      1. Finally add the scripts in the `package.json` file for running tests in various scenarios . One is for normal testing , the other test is for the `staged` state, and comparing to previously written tests, and the last in for generating the `code coverage`.
 
           ```json
             \\package.json
