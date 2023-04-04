@@ -483,14 +483,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       <img src='./pictures/eslint-config.jpg' alt="eslint-configuration" height="300" width="auto">
 
-    1. Now we create a script  in our `package.json` file for linting using `eslint`
-
-     ```json
-      \\package.json
-
-      "lint":"eslint --ext .ts src/"
-     ```
-
     1. In our `.gitignore` file, we need to add `node_modules` , `dist` and `coverage` folders.
 
         ```terminal
@@ -500,3 +492,11 @@ This would have our `src` and `test` folder , which  contain all our typescript 
         coverage
 
         ```
+
+    1. Now we create a script  in our `package.json` file for linting using `eslint`
+
+     ```json
+      \\package.json
+
+      "lint":"eslint --ignore-path .gitignore --ext .ts --fix"
+     ```
