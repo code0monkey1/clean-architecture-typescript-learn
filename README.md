@@ -340,3 +340,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
      import 'module-alias/register';
 
     ```
+
+1. Next, for our build to recognize the reference to our files defined in the `paths` property of our `tsconfig-build , we need to create a similar mapping in our package.json file .
