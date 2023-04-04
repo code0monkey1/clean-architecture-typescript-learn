@@ -591,11 +591,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
                              "editor.codeActionsOnSave": {
                              "source.fixAll.eslint": true,
                               }
-1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest.
-         1. For this, we first install a package called `@shelf/jest-mongodb` , which will be installed in `dev mode`
-               
-             ```terminal
-             
-               npm i -D  @shelf/jest-mongodb
-            ```
-
+1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest .
+       - For this, we first install a package called `@shelf/jest-mongodb` , which will be installed in `dev mode`
+       -  `npm i -D  @shelf/jest-mongodb`
