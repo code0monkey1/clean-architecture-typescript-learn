@@ -429,3 +429,14 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               "@test/(.*)": "<rootDir>/test/$1",
              },
           ```
+
+      1. Next we define the `roots` property , which will point to the folder that contains all the files that need to be tested by jest.So, we need to test all files in the `test` folder in our `root directory`
+
+          ```json
+             //jest.config.js
+
+             roots: [
+              "<rootDir>/test/",
+            ],
+
+          ```
