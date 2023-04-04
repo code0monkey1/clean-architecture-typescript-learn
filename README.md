@@ -328,7 +328,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
 1. For the build process to recognize the reference to our files defined in the  `paths` property of the project , we need to install a package known as `module-alias` to our project as a production dependency.
 
-      ```json
+      ```bash
         npm i module-alias
       ```
 
