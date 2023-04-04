@@ -326,8 +326,10 @@ This would have our `src` and `test` folder , which  contain all our typescript 
     >
     > By running the build command, we are able to  compile fresh files and folders using the typescript configurations for build time ( which does not include unnecessary files like `test` by using the `tsconfig-build.json` file )
 
-1. For the build process to recognize the reference to our files defined in the  `paths` property of the project , we need to install a package known as `module-alias` to our project .
+1. For the build process to recognize the reference to our files defined in the  `paths` property of the project , we need to install a package known as `module-alias` to our project as a production dependency.
 
-    ```json
-     npm i module-alias
-    ```
+      ```json
+      npm i module-alias
+      ```
+
+1.
