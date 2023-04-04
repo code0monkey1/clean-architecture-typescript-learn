@@ -482,3 +482,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
      ```
 
       <img src='./pictures/eslint-config.jpg' alt="eslint-configuration" height="300" width="auto">
+
+    1. Now we create a script  in our `package.json` file for linting using `eslint`
+
+      \\package.json
