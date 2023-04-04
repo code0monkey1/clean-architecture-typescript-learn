@@ -251,12 +251,14 @@ This objective is easily achieved by applying the `Dependency Inversion Principl
      "baseUrl": "./src"
     ```
 
-1. Next set the directory references using `paths` attribute in the tsconfig.json file, which will allow us to easily reference different files in our project.
+1. Next set the directory references using `paths` attribute in the `tsconfig.json` file, which will allow us to easily reference different files in our project.
 All these modules will be set in reference to the `baseUrl (i.e : src)` in our particular case
 
     >This is how we'll be able to reference files in our project after setting up the `paths` attribute eg : `import CreateUserUseCase from'@application/useCases/CreateUserUseCase'` rather than using something like `import CreateUserUseCase from './src/application/useCases/CreateUserUseCase'`
 
       ```json
+      //tsconfig.json
+
       "paths": {
       "@domain/_":["domain/_"],
       "@application/_":["application/_"],
