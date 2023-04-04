@@ -475,6 +475,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
 1. Setting up `esLint` for our project :
 
-    <img src='./pictures/eslint-config.jpg' alt="eslint-configuration">
+    <img src='./pictures/eslint-config.jpg' alt="eslint-configuration" height="300" width="auto">
 
      1.
