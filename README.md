@@ -463,4 +463,12 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               },
           ```
 
-      1. Finally add the scripts in the `package.json` file
+      1. Finally add the scripts in the `package.json` file for running tests in various scenarios
+
+          ```json
+            \\package.json
+            
+            "test": "jest --passWithNoTests --runInBand --no-cache",
+            "test:stage":"npm run test -- --findRelatedTests",
+            "test:ci":"npm run test -- --coverage"
+          ```
