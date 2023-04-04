@@ -370,8 +370,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
 1. Install the `concurrently` package as a prod dependency , as it allows multiple npm commands to run simultaneously , so that we can `build` our project , and also at the same time `watch` our built project once it's built .
 
-      ```bash
-       //terminal
+      ```console
 
         npm i concurrently
       ```
@@ -388,14 +387,14 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       1. Install both as `dev dependencies`
 
-            ```console
-             npm i -D jest @types/jest
-           ```
+          ```console
+            npm i -D jest @types/jest
+          ```
 
       1. Now initiate jest files by running the following command:
 
            ```console
-             ./node_modules/jest/bin/jest.js --init
+            ./node_modules/jest/bin/jest.js --init
            ```
 
           <img src='./pictures/jest_coverage.jpg' alt='coverage' width='auto' height='300' />
