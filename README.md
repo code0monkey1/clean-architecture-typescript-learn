@@ -490,3 +490,13 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       "lint":"eslint --ext .ts src/"
      ```
+
+    1. In our `.gitignore` file, we need to add `node_modules` , `dist` and `coverage` folders.
+
+        ```terminal
+        \\ .gitignore
+        node_modules
+        dist
+        coverage
+
+        ```
