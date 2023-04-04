@@ -357,3 +357,9 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               "@main": "./dist/main"
             }
            ```
+
+1. Install `nodemon` as a dev dependency for instant feedback on code change during development
+
+     ```bash
+      npm i -D nodemon
+     ```
