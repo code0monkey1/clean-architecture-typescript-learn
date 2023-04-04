@@ -416,4 +416,4 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               coverageDirectory: "coverage",
           ```
 
-      1. Next , we set the property `ModuleNameMapper` property
+      1. Next , we set the property `ModuleNameMapper` , which maps the name of the modules we've defined , i.e `domain` `application` etc , with respect to the `<rootDir>`.
