@@ -397,3 +397,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
            ```console
              ./node_modules/jest/bin/jest.js --init
            ```
+
+          <img src='./pictures/jest_coverage.jpg' alt='coverage' width='300' height='300' />
