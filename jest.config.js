@@ -2,6 +2,7 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
+/* eslint-disable */
 const { defaults: tsjPreset } = require('ts-jest/presets')
 
 module.exports = {

@@ -447,11 +447,13 @@ This would have our `src` and `test` folder , which  contain all our typescript 
           npm install --save-dev ts-jest
          ```
 
-      1. Now in the we need to add support for typescript files in test , in the `jest.config.js` file .
+      1. Now in the we need to add support for typescript files in test , in the `jest.config.js` file , and also add `/* eslint-disable */` to the top of the file.
 
           ```json
              //jest.config.js
              
+            /* eslint-disable */
+
               //this will come at the top of the file outside the `module.exports` function
 
              const { defaults: tsjPreset } = require('ts-jest/presets')
