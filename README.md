@@ -378,6 +378,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       
       ```json
         // package.json
-
-        "start:dev": "concurrently --kill-others-on-fail \"npm run build:watch\" \"npm run dev\"" 
+        
+        "dev": "nodemon -L --watch  ./dist ./dist/main/server.js",
+   
+        "start:dev": "concurrently --kill-others-on-fail \"npm run build:watch\" \"npm run dev\"" ,
       ```
