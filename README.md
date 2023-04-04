@@ -329,16 +329,16 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 1. For the build process to recognize the reference to our files defined in the  `paths` property of the project , we need to install a package known as `module-alias` to our project as a production dependency.
 
       ```json
-      npm i module-alias
+        npm i module-alias
       ```
 
-1. Next, for our build to recognize the reference to our files defined in the `paths` property of our `tsconfig-build.json` , we import `module-alias/register` at the top of the `server.ts` file in the `main` folder inside the `src` directory.
+      1. Next, we import `module-alias/register` at the top of the `server.ts` file in the `main` folder inside the `src` directory.
 
-    ```typescript
-     \\serve.ts
-     
-     import 'module-alias/register';
+          ```typescript
+               \\serve.ts
+               
+            import 'module-alias/register';
+          
+          ```
 
-    ```
-
-1.For the `module-alias` package to recognize our defined package structure during build time, our files defined in the `paths` property of our `tsconfig-build , we need to create a similar mapping in our package.json file .
+      1. For the `module-alias` package to recognize our defined package structure , during build time, our files, we need to create a mapping  similar to the tsconfig.json file structure in our package.json file .
