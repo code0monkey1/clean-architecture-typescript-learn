@@ -332,4 +332,4 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       npm i module-alias
       ```
 
-1.
+1. Next, for our build to recognize the reference to our files defined in the `paths` property our `tsconfig-build.json` the `server.js`
