@@ -374,8 +374,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
        //terminal
 
         npm i concurrently
-       ```
-      
+      ```
+
       ```json
         // package.json
         
