@@ -415,3 +415,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
           ```json
               coverageDirectory: "coverage",
           ```
+
+      1. Next , we set the property `ModuleNameMapper` property
