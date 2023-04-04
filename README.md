@@ -500,3 +500,9 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
       "lint":"eslint --ignore-path .gitignore --ext .ts --fix"
      ```
+
+1. To run `eslint` and `jest` in every commit we install a production dependency called `husky`
+
+   ```terminal
+      npx husky-init && npm install
+   ```
