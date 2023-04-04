@@ -472,3 +472,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             "test:stage":"npm run test -- --findRelatedTests",
             "test:ci":"npm run test -- --coverage"
           ```
+
+1. Setting up `esLint` for our project :
+
+     1.
