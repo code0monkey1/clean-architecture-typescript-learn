@@ -580,17 +580,48 @@ This would have our `src` and `test` folder , which  contain all our typescript 
   
             "parserOptions":{
               "project": "./tsconfig.json",
-              }
+             }
          ```
 
-      1. Next, ensure to run eslint every time you save your file .
-                      + Install eslint plugin if not already installed.
-                      + press `Cmd + shift + P` , then select `Preferences: Open user settings(JSON)`.
-                      + Then set in `settings.json` :
-                            \\json
-                             "editor.codeActionsOnSave": {
-                             "source.fixAll.eslint": true,
-                              }
-1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest .
-       - For this, we first install a package called `@shelf/jest-mongodb` , which will be installed in `dev mode`
-       -  `npm i -D  @shelf/jest-mongodb`
+      1. Next, ensure to run eslint every time you save your file.
+                      1. Install eslint plugin if not already installed.
+                      1. Press `Cmd + shift + P` , then select `Preferences: Open user settings(JSON)`
+
+                          ```json
+                            \\Then set in 
+                            `settings.json` :
+                                "editor.codeActionsOnSave": {
+                                "source.fixAll.eslint": true,
+                                }
+                          ```
+
+1. Finally , we're going to add an `in memory implementation of mongodb` for testing with jest.  
+      1. Install `@shelf/jest-mongodb` package as a dev dependency.
+
+            ``` 
+            npm i -D  @shelf/jest-mongodb
+            ```
+
+      1. Got to `jest.config.js` and add the package to the presents attribute.
+   
+         ```json
+           presents:@shelf/jest-mongodb
+         ```
+
+      1. Create a file named `jest-mongodb-config.js` and add `/* eslint-disable */` to the top of it.
+      1. Add the following specifications the the file.
+            ```json
+            //jest-mongodb-config.js
+                         module.exports = {
+                  mongodbMemoryServerOptions: {
+                    binary: {
+                      version: '4.0.3',
+                      skipMD5: true,
+                    },
+                    autoStart: false,
+                    instance: {},
+                  },
+                };
+            ```
+      1. Use `mongod --version` to find out the version of the mongodb running on your system ,and set the same version number in the`version` attribute of  the `jest-mongodb-config.js` file.
+      1.This package creates the file `globalConfig.json` in the project root . This is not necessary to be committed , so  add `globalConfig.json` to `ignored files` in `.gitignore`.
