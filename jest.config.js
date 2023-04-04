@@ -23,8 +23,8 @@ module.exports = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    '<rootDir>/src/**/*.ts',
-    '!<rootDir>/src/main/**/*.ts',
+    "<rootDir>/src/**/*.ts",
+    "!<rootDir>/src/main/**/*.ts",
   ],
 
   // The directory where Jest should output its coverage files
@@ -98,8 +98,8 @@ module.exports = {
     "@application/(.*)": "<rootDir>/src/application/$1",
     "@infrastructure/(.*)": "<rootDir>/src/infrastructure/$1",
     "@main/(.*)": "<rootDir>/src/main/$1",
-    "@test/(.*)": "<rootDir>/test/$1",
-   },
+    "@test/(.*)": "<rootDir>/test/$1"
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -135,8 +135,8 @@ module.exports = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  roots: [
-    "<rootDir>/test/",
+   roots: [
+    "<rootDir>/test/"
   ],
 
   // Allows you to use a custom runner instead of Jest's default test runner
@@ -184,7 +184,7 @@ module.exports = {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
-  transform: {
+   transform: {
     ...tsjPreset.transform,
   },
 

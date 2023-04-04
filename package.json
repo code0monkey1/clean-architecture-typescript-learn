@@ -50,10 +50,10 @@
     "module-alias": "^2.2.2"
   },
   "_moduleAliases": {
-    "@domain": "./dist/domain",
-    "@application": "./dist/application",
-    "@infrastructure": "./dist/infrastructure",
-    "@main": "./dist/main"
+    "@domain": "dist/domain",
+    "@application": "dist/application",
+    "@infrastructure": "dist/infrastructure",
+    "@main": "dist/main"
   },
   "lint-staged": {
     "*.ts": [
