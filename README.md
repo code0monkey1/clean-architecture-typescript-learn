@@ -582,3 +582,13 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               "project": "./tsconfig.json",
               }
          ```
+
+      1. Next, ensure to run eslint every time you save your file .
+                + Install eslint plugin if not already installed
+                + press `Cmd + shift + P` , then select Preferences: `Open user settings(JSON)`
+                + Then set :
+                      ```json
+                       "editor.codeActionsOnSave": {
+                       "source.fixAll.eslint": true,
+                       }
+                      ```
