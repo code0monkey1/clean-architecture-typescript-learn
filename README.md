@@ -398,4 +398,6 @@ This would have our `src` and `test` folder , which  contain all our typescript 
              ./node_modules/jest/bin/jest.js --init
            ```
 
-          <img src='./pictures/jest_coverage.jpg' alt='coverage' width='300' height='300' />
+          <img src='./pictures/jest_coverage.jpg' alt='coverage' width='auto' height='300' />
+
+      1. Now we go to the generated `jest.config.js` file
