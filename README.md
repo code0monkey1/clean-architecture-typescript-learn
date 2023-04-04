@@ -451,9 +451,13 @@ This would have our `src` and `test` folder , which  contain all our typescript 
 
            ```json
              //jest.config.js
+             
+              //this will come at the top of the file outside the `module.exports` function
 
              const { defaults: tsjPreset } = require('ts-jest/presets')
-                    
+            
+              //the transform property will me modified likewise   
+    
             transform: {
             ...tsjPreset.transform,
             },
