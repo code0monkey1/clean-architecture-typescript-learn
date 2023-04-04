@@ -395,5 +395,5 @@ This would have our `src` and `test` folder , which  contain all our typescript 
       1. Now initiate jest files by running the following command:
 
            ```console
-           
+             ./node_modules/jest/bin/jest.js --init
            ```
