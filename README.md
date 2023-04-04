@@ -367,3 +367,17 @@ This would have our `src` and `test` folder , which  contain all our typescript 
      ```bash
       npm i -D nodemon
      ```
+
+1. Install the `concurrently` package as a prod dependency , as it allows multiple npm commands to run simultaneously , so that we can `build` our project , and also at the same time `watch` our built project once it's built .
+
+      ```bash
+       //terminal
+
+        npm i concurrently
+       ```
+      
+      ```json
+        // package.json
+
+        "start:dev": "concurrently --kill-others-on-fail \"npm run build:watch\" \"npm run dev\"" 
+      ```
