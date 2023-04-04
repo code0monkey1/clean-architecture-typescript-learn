@@ -384,8 +384,16 @@ This would have our `src` and `test` folder , which  contain all our typescript 
         "start:dev": "concurrently --kill-others-on-fail \"npm run build:watch\" \"npm run dev\"" ,
       ```
 
-1. Now we start with setting up the test environment using the `jest` library , and also installing the `@types/jest` for typescript support. Both will be `dev dependencies`
+1. Now we start with setting up the test environment using the `jest` library , and also installing the `@types/jest` for typescript support.
 
-     ```console
-       npm i -D jest @types/jest
-     ```
+      1. Install both as `dev dependencies`
+
+            ```console
+             npm i -D jest @types/jest
+           ```
+
+      1. Now initiate jest files by running the following command:
+
+           ```console
+           
+           ```
