@@ -410,4 +410,8 @@ This would have our `src` and `test` folder , which  contain all our typescript 
                   ]
           ```
 
-      1.
+      1. Set the name of the coverage directory using the `coverageDirectory` property , and set it to a folder with the name `coverage`
+
+          ```json
+              coverageDirectory: "coverage",
+          ```
