@@ -442,3 +442,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
           ```
 
       1. Next ,in order to use typescript files in jest , without any type errors , we need to install the library `ts-jest` as a dev dependency.
+
+         ```terminal
+          npm install --save-dev ts-jest
+         ```
