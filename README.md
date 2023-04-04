@@ -469,7 +469,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
             \\package.json
             
             "test": "jest --passWithNoTests --runInBand --no-cache",
-            "test:stage":"npm run test -- --findRelatedTests",
+            "test:staged":"npm run test -- --findRelatedTests",
             "test:ci":"npm run test -- --coverage"
           ```
 
@@ -506,3 +506,77 @@ This would have our `src` and `test` folder , which  contain all our typescript 
    ```terminal
       npx husky-init && npm install
    ```
+
+   1. To include a default commit message to the husky configuration , execute the following command:
+
+     ```terminal
+
+      npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+
+     ```
+
+1. Linting makes more sense when run before committing your code.
+
+      1. To only `lint` files that have been staged and are about to be committed, rather than linting the whole project every time , we use the package called `lint-staged` as a `dev dependency`.
+
+         ```terminal
+           npm install --save-dev lint-staged
+         ```
+
+      1. Next , we add the `lint-staged` attribute to the `package.json` file , specifying the type of files to run (`.ts` in our case) , along with the lint commands to run on our staged files.
+
+          ```json
+            //package.json
+
+            "lint-staged": {
+              "*.ts":[
+                "npm run lint",
+                "npm run test:staged"
+              ]
+            }
+          ```
+
+      1. Now in the `.husky/pre-commit` file , replace the _`npm test`_ with _`npx  lint-staged`_ , at the bottom of the pre-commit file. So as to ensure that before every commit of staged files, the `lint-staged` commands are run.
+
+         ```terminal
+
+            //pre-commit
+
+            #!/usr/bin/env sh
+            . "$(dirname -- "$0")/_/husky.sh"
+            
+            npx lint-staged
+         ```
+
+      1. To configure a proper configuration for the `.husky/commit-msg` file, we first need to run 2 commands :
+  
+         ```terminal
+
+          # 1 To Install commitlint cli and conventional config
+
+          npm install --save-dev @commitlint/{config-conventional,cli}
+
+          # 2  To Configure commitlint to use conventional config
+
+          echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+          
+         ```
+
+      1. Next, goto the newly generated `commitlint.config.js` file and add `/* eslint-disable */` at the top of the file.
+
+          ```json
+            //commitlint.config.js
+
+           /* eslint-disable */
+
+          ```
+
+      1. Next, configure the `.eslintrc.json` file to use specific rules while linting your  `.ts` files. For that go to the `project` attribute of the `parserOptions` property and add `./tsconfig.json` to it, to let eslint know about your typescript configuration rules for the dev environment.
+  
+         ```json
+           //.eslint.json
+  
+            "parserOptions":{
+              "project": "./tsconfig.json",
+              }
+         ```
