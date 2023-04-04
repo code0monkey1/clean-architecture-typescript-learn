@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "![Clean Architecture](./pictures/CleanArchitecture.jpg)",
   "main": "dist/main/server.js",
-   "scripts": {
+  "scripts": {
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "build:watch": "npm run build -- --watch",
     "start": "node dist/main/server.js",
@@ -26,7 +26,7 @@
     "url": "https://github.com/code0monkey1/clean-architecture-typescript-learn/issues"
   },
   "homepage": "https://github.com/code0monkey1/clean-architecture-typescript-learn#readme",
-   "devDependencies": {
+  "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/jest": "^29.0.1",
