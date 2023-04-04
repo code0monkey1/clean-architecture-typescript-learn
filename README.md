@@ -416,7 +416,7 @@ This would have our `src` and `test` folder , which  contain all our typescript 
               coverageDirectory: "coverage",
           ```
 
-      1. Next , we set the property `moduleNameMapper` , which maps the name of the modules we've defined , i.e `domain` `application` etc , with respect to the `<rootDir>`.
+      1. Next , we set the property `moduleNameMapper` , which maps the name of the modules we've defined , i.e `domain` `application` etc , with respect to the `<rootDir>` i.e the root directory of our project. Here the `$`1`
   
           ```json
            //jest.config.js
