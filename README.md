@@ -66,6 +66,8 @@ interface ChargeDevice{
 
 ### 2 . Adapters
 
+![Adapters](./pictures/adapters.jpg)
+
 <img src='./pictures/laptopAdapter.jpg' width="300" height="300"/>
 
 <img src='./pictures/phoneAdapter.jpeg' width="300" height="300"/>
@@ -105,9 +107,13 @@ class PhoneCharger implements ChargeDevice{
 
 ### 3 . Entity
 
+![Entities](./pictures/entities.jpg)
+
 <img src='./pictures/macbookDevice.webp' width="300" height="300"/>
 
 <img src='./pictures/pixelPhoneDevice.jpg' width="300" height="300"/>
+
+
 
 _This is the concrete implementation
 that plugs into the adapter in order to communicate with the port_
@@ -129,6 +135,8 @@ go about defining the Device Type
 ---
 
 ## The Whole Setup in Action
+
+![Use Cases](./pictures/use-cases.jpg)
 
 ### `UseCase : ChargeDevice`
 
