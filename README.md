@@ -103,7 +103,7 @@ class PhoneCharger implements ChargeDevice{
 
 ---
 
-### 3 . Devices
+### 3 . Entity
 
 <img src='./pictures/macbookDevice.webp' width="300" height="300"/>
 
@@ -116,7 +116,7 @@ that plugs into the adapter in order to communicate with the port_
 In Typescript Code , this is how we'd
 go about defining the Device Type 
 
-//Device ( Entity )
+( Entity )
 
  type TDevice={
 
@@ -132,7 +132,7 @@ go about defining the Device Type
 
 ### `UseCase : ChargeDevice`
 
-  | PORT | ADAPTER | DEVICE | USE CASE INSTANCE |
+  | PORT | ADAPTER | ENTITY | USE CASE INSTANCE |
   |:----:|:----:|:----:|:----:|
   |ChargeDevice|MacBookCharger|MacBook|ChargeMacBook|
   |ChargeDevice|PhoneCharger|PixelPhone|ChargePhone|
