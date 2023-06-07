@@ -30,7 +30,7 @@ etc ...
 
 ---
 
-## Ports /  Adapters / Devices
+## Ports /  Adapters / Entities
 
 >_A practical and useful implementation of the dependency inversion principle_
 
