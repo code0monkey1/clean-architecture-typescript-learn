@@ -38,7 +38,7 @@ etc ...
 
 <img src='./pictures/port.jpeg' width="300" height="300"/>
 
-_Ports are the interfaces to which adapters can connect to_
+_Ports are the interfaces ( behavior )  to which adapters can adapt to ( implementation )_
 
 In code , it means we create an interface that specifies the function that is supposed to be performed
 
